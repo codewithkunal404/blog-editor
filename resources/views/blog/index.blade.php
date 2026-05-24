@@ -4,27 +4,6 @@
 
 @section('content')
     <div class="flex flex-col gap-6">
-        <!-- Header Section -->
-        <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div class="flex items-center gap-3">
-                <div class="rounded-lg bg-slate-100 p-3">
-                    <svg class="h-6 w-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C6.5 6.253 2 10.753 2 16.253s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z"></path>
-                    </svg>
-                </div>
-                <div>
-                    <h1 class="text-3xl font-semibold text-slate-900">Blog Posts</h1>
-                    <p class="mt-1 text-sm text-slate-500">Manage posts, preview content, and update SEO metadata from one dashboard.</p>
-                </div>
-            </div>
-            <a href="{{ route('blogs.create') }}" class="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 active:scale-95">
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
-                </svg>
-                New Blog Post
-            </a>
-        </div>
-
         <!-- Table Container -->
         <div class="overflow-x-auto rounded-lg border border-slate-200 bg-white shadow-sm">
             <table class="w-full divide-y divide-slate-200">
