@@ -1,0 +1,465 @@
+[
+  {
+    "id": "heading",
+    "type": "heading",
+    "label": "Heading",
+    "icon": "H",
+    "category": "text",
+    "preview": "H1 to H6 heading",
+    "defaultProps": {
+      "level": 2,
+      "text": "Section Heading"
+    },
+    "defaultStyles": {
+      "color": "#111827",
+      "fontSize": "1.875rem",
+      "fontWeight": "700",
+      "lineHeight": "1.2",
+      "textAlign": "left",
+      "letterSpacing": "0",
+      "marginTop": "24px",
+      "marginBottom": "16px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "level", "label": "Heading level", "type": "select", "options": [1, 2, 3, 4, 5, 6] },
+      { "group": "props", "key": "text", "label": "Heading text", "type": "text" }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "color", "label": "Color", "type": "color" },
+      { "group": "styles", "key": "fontSize", "label": "Font size", "type": "text" },
+      { "group": "styles", "key": "fontWeight", "label": "Font weight", "type": "select", "options": ["400", "500", "600", "700", "750", "800"] },
+      { "group": "styles", "key": "lineHeight", "label": "Line height", "type": "text" },
+      { "group": "styles", "key": "textAlign", "label": "Text align", "type": "select", "options": ["left", "center", "right"] },
+      { "group": "styles", "key": "letterSpacing", "label": "Letter spacing", "type": "text" },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "paragraph",
+    "type": "paragraph",
+    "label": "Paragraph",
+    "icon": "Txt",
+    "category": "text",
+    "preview": "Readable body copy",
+    "defaultProps": {
+      "text": "Start writing here. Keep the paragraph focused on one idea and make it easy to scan.",
+      "maxWords": 90
+    },
+    "defaultStyles": {
+      "color": "#374151",
+      "fontSize": "1.125rem",
+      "lineHeight": "1.8",
+      "textAlign": "left",
+      "marginBottom": "18px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "text", "label": "Paragraph", "type": "textarea", "rows": 6 },
+      { "group": "props", "key": "maxWords", "label": "Max words", "type": "number" }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "color", "label": "Color", "type": "color" },
+      { "group": "styles", "key": "fontSize", "label": "Font size", "type": "text" },
+      { "group": "styles", "key": "lineHeight", "label": "Line height", "type": "text" },
+      { "group": "styles", "key": "textAlign", "label": "Text align", "type": "select", "options": ["left", "center", "right", "justify"] },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "section",
+    "type": "section",
+    "label": "Section",
+    "icon": "Sec",
+    "category": "layout",
+    "preview": "Section wrapper",
+    "defaultProps": {
+      "title": "Section",
+      "content": "Use sections to group related content blocks."
+    },
+    "defaultStyles": {
+      "backgroundColor": "#ffffff",
+      "padding": "32px",
+      "borderRadius": "16px",
+      "border": "1px solid #e5e7eb",
+      "marginTop": "24px",
+      "marginBottom": "24px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "title", "label": "Section title", "type": "text" },
+      { "group": "props", "key": "content", "label": "Section content", "type": "textarea", "rows": 5 }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "backgroundColor", "label": "Background", "type": "color" },
+      { "group": "styles", "key": "padding", "label": "Padding", "type": "text" },
+      { "group": "styles", "key": "borderRadius", "label": "Radius", "type": "text" },
+      { "group": "styles", "key": "border", "label": "Border", "type": "text" },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "grid_section",
+    "type": "grid",
+    "label": "Grid Section",
+    "icon": "Grid",
+    "category": "layout",
+    "preview": "Rows and columns",
+    "defaultProps": {
+      "columns": 2,
+      "gap": "20px",
+      "items": "Research-backed insight\nPractical implementation\nPublishing checklist\nPerformance review"
+    },
+    "defaultStyles": {
+      "backgroundColor": "#ffffff",
+      "padding": "0px",
+      "borderRadius": "12px",
+      "marginTop": "20px",
+      "marginBottom": "20px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "columns", "label": "Columns", "type": "number" },
+      { "group": "props", "key": "gap", "label": "Column gap", "type": "text" },
+      { "group": "props", "key": "items", "label": "Grid items, one per line", "type": "textarea", "rows": 7 }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "backgroundColor", "label": "Background", "type": "color" },
+      { "group": "styles", "key": "padding", "label": "Padding", "type": "text" },
+      { "group": "styles", "key": "borderRadius", "label": "Radius", "type": "text" },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "row",
+    "type": "row",
+    "label": "Row Layout",
+    "icon": "Row",
+    "category": "layout",
+    "preview": "Horizontal row",
+    "defaultProps": {
+      "columns": 3,
+      "items": "Plan\nWrite\nOptimize"
+    },
+    "defaultStyles": {
+      "gap": "16px",
+      "alignItems": "stretch",
+      "marginTop": "20px",
+      "marginBottom": "20px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "columns", "label": "Columns", "type": "number" },
+      { "group": "props", "key": "items", "label": "Columns, one per line", "type": "textarea", "rows": 6 }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "gap", "label": "Gap", "type": "text" },
+      { "group": "styles", "key": "alignItems", "label": "Align items", "type": "select", "options": ["start", "center", "end", "stretch"] },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "image",
+    "type": "image",
+    "label": "Image",
+    "icon": "Img",
+    "category": "media",
+    "preview": "Single image",
+    "defaultProps": {
+      "url": "",
+      "alt": "",
+      "caption": ""
+    },
+    "defaultStyles": {
+      "width": "100%",
+      "height": "auto",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "marginTop": "18px",
+      "marginBottom": "18px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "url", "label": "Image URL", "type": "url", "upload": true },
+      { "group": "props", "key": "alt", "label": "Alt text", "type": "text" },
+      { "group": "props", "key": "caption", "label": "Caption", "type": "text" }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "width", "label": "Width", "type": "text" },
+      { "group": "styles", "key": "height", "label": "Height", "type": "text" },
+      { "group": "styles", "key": "borderRadius", "label": "Radius", "type": "text" },
+      { "group": "styles", "key": "objectFit", "label": "Object fit", "type": "select", "options": ["cover", "contain", "fill"] },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "image_grid",
+    "type": "image_grid",
+    "label": "Image Grid",
+    "icon": "Imgs",
+    "category": "media",
+    "preview": "Gallery grid",
+    "defaultProps": {
+      "columns": 2,
+      "images": ""
+    },
+    "defaultStyles": {
+      "gap": "16px",
+      "borderRadius": "12px",
+      "imageHeight": "220px",
+      "marginTop": "20px",
+      "marginBottom": "20px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "columns", "label": "Columns", "type": "number" },
+      { "group": "props", "key": "images", "label": "Image URLs, one per line", "type": "textarea", "rows": 7 }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "gap", "label": "Gap", "type": "text" },
+      { "group": "styles", "key": "borderRadius", "label": "Image radius", "type": "text" },
+      { "group": "styles", "key": "imageHeight", "label": "Image height", "type": "text" },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "quote",
+    "type": "quote",
+    "label": "Quote",
+    "icon": "Qt",
+    "category": "text",
+    "preview": "Editorial quote",
+    "defaultProps": {
+      "text": "Quote here",
+      "author": ""
+    },
+    "defaultStyles": {
+      "backgroundColor": "#f3f4f6",
+      "padding": "22px",
+      "borderLeft": "4px solid #2563eb",
+      "borderRadius": "10px",
+      "fontSize": "1.25rem",
+      "lineHeight": "1.7"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "text", "label": "Quote", "type": "textarea", "rows": 5 },
+      { "group": "props", "key": "author", "label": "Author", "type": "text" }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "backgroundColor", "label": "Background", "type": "color" },
+      { "group": "styles", "key": "padding", "label": "Padding", "type": "text" },
+      { "group": "styles", "key": "borderLeft", "label": "Left border", "type": "text" },
+      { "group": "styles", "key": "borderRadius", "label": "Radius", "type": "text" },
+      { "group": "styles", "key": "fontSize", "label": "Font size", "type": "text" },
+      { "group": "styles", "key": "lineHeight", "label": "Line height", "type": "text" }
+    ]
+  },
+  {
+    "id": "list",
+    "type": "list",
+    "label": "List",
+    "icon": "Lst",
+    "category": "text",
+    "preview": "Checklist or bullets",
+    "defaultProps": {
+      "items": "First point\nSecond point\nThird point",
+      "ordered": "no"
+    },
+    "defaultStyles": {
+      "color": "#374151",
+      "fontSize": "1.125rem",
+      "lineHeight": "1.7",
+      "marginBottom": "18px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "items", "label": "Items, one per line", "type": "textarea", "rows": 7 },
+      { "group": "props", "key": "ordered", "label": "Ordered list", "type": "select", "options": ["no", "yes"] }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "color", "label": "Color", "type": "color" },
+      { "group": "styles", "key": "fontSize", "label": "Font size", "type": "text" },
+      { "group": "styles", "key": "lineHeight", "label": "Line height", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "button",
+    "type": "button",
+    "label": "Button",
+    "icon": "Btn",
+    "category": "interactive",
+    "preview": "Inline button",
+    "defaultProps": {
+      "text": "Read the checklist",
+      "url": "#",
+      "target": "_self",
+      "variant": "primary"
+    },
+    "defaultStyles": {
+      "backgroundColor": "#2563eb",
+      "color": "#ffffff",
+      "padding": "12px 24px",
+      "borderRadius": "8px",
+      "marginTop": "8px",
+      "marginBottom": "18px",
+      "fontSize": "1rem",
+      "fontWeight": "600"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "text", "label": "Button text", "type": "text" },
+      { "group": "props", "key": "url", "label": "URL", "type": "url" },
+      { "group": "props", "key": "target", "label": "Target", "type": "select", "options": ["_self", "_blank"] },
+      { "group": "props", "key": "variant", "label": "Style", "type": "select", "options": ["primary", "secondary", "outline", "danger"] }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "backgroundColor", "label": "Background", "type": "color" },
+      { "group": "styles", "key": "color", "label": "Text color", "type": "color" },
+      { "group": "styles", "key": "padding", "label": "Padding", "type": "text" },
+      { "group": "styles", "key": "borderRadius", "label": "Radius", "type": "text" },
+      { "group": "styles", "key": "fontSize", "label": "Font size", "type": "text" },
+      { "group": "styles", "key": "fontWeight", "label": "Font weight", "type": "select", "options": ["400", "500", "600", "700"] },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "social_links",
+    "type": "social_links",
+    "label": "Media Links",
+    "icon": "Share",
+    "category": "interactive",
+    "preview": "Social media icons",
+    "defaultProps": {
+      "links": "facebook|https://facebook.com\ntwitter|https://twitter.com\nlinkedin|https://linkedin.com",
+      "layout": "horizontal",
+      "size": "medium",
+      "style": "icon",
+      "animation": "hover-scale",
+      "backgroundColor": "#f3f4f6",
+      "hoverBackgroundColor": "#111827",
+      "iconColor": "#374151",
+      "hoverIconColor": "#ffffff",
+      "borderRadius": "50%",
+      "showLabel": "no"
+    },
+    "defaultStyles": {
+      "gap": "12px",
+      "justifyContent": "flex-start",
+      "marginTop": "16px",
+      "marginBottom": "16px",
+      "padding": "0px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "links", "label": "Social links (platform|url, one per line)", "type": "textarea", "rows": 6 },
+      { "group": "props", "key": "layout", "label": "Layout", "type": "select", "options": ["horizontal", "vertical"] },
+      { "group": "props", "key": "size", "label": "Icon size", "type": "select", "options": ["small", "medium", "large", "extra-large"] },
+      { "group": "props", "key": "style", "label": "Icon style", "type": "select", "options": ["icon", "text", "icon-text", "outline"] },
+      { "group": "props", "key": "animation", "label": "Animation", "type": "select", "options": ["none", "hover-scale", "hover-rotate", "hover-lift", "pulse", "bounce"] },
+      { "group": "props", "key": "showLabel", "label": "Show platform name", "type": "select", "options": ["yes", "no"] }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "gap", "label": "Gap between icons", "type": "text" },
+      { "group": "styles", "key": "justifyContent", "label": "Alignment", "type": "select", "options": ["flex-start", "center", "flex-end", "space-between", "space-around"] },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" },
+      { "group": "styles", "key": "padding", "label": "Padding", "type": "text" }
+    ],
+    "advancedControls": [
+      { "group": "props", "key": "backgroundColor", "label": "Background color", "type": "color" },
+      { "group": "props", "key": "hoverBackgroundColor", "label": "Hover background color", "type": "color" },
+      { "group": "props", "key": "iconColor", "label": "Icon color", "type": "color" },
+      { "group": "props", "key": "hoverIconColor", "label": "Hover icon color", "type": "color" },
+      { "group": "props", "key": "borderRadius", "label": "Border radius", "type": "text" }
+    ]
+  },
+  {
+    "id": "cta",
+    "type": "cta",
+    "label": "CTA Section",
+    "icon": "CTA",
+    "category": "interactive",
+    "preview": "Call to action",
+    "defaultProps": {
+      "title": "Ready to improve your publishing workflow?",
+      "text": "Turn your outline into structured, SEO-ready content with reusable blocks.",
+      "buttonText": "Start building",
+      "buttonUrl": "#"
+    },
+    "defaultStyles": {
+      "backgroundColor": "#111827",
+      "color": "#ffffff",
+      "padding": "32px",
+      "borderRadius": "16px",
+      "marginTop": "28px",
+      "marginBottom": "28px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "title", "label": "Title", "type": "text" },
+      { "group": "props", "key": "text", "label": "Text", "type": "textarea", "rows": 4 },
+      { "group": "props", "key": "buttonText", "label": "Button label", "type": "text" },
+      { "group": "props", "key": "buttonUrl", "label": "Button URL", "type": "url" }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "backgroundColor", "label": "Background", "type": "color" },
+      { "group": "styles", "key": "color", "label": "Color", "type": "color" },
+      { "group": "styles", "key": "padding", "label": "Padding", "type": "text" },
+      { "group": "styles", "key": "borderRadius", "label": "Radius", "type": "text" },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  },
+  {
+    "id": "code",
+    "type": "code",
+    "label": "Code Section",
+    "icon": "Code",
+    "category": "technical",
+    "preview": "Code block",
+    "defaultProps": {
+      "language": "php",
+      "code": "// Add code here"
+    },
+    "defaultStyles": {
+      "backgroundColor": "#020617",
+      "color": "#e5e7eb",
+      "padding": "18px",
+      "borderRadius": "12px",
+      "fontSize": "0.875rem",
+      "lineHeight": "1.5"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "language", "label": "Language", "type": "text" },
+      { "group": "props", "key": "code", "label": "Code", "type": "textarea", "rows": 10 }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "backgroundColor", "label": "Background", "type": "color" },
+      { "group": "styles", "key": "color", "label": "Color", "type": "color" },
+      { "group": "styles", "key": "padding", "label": "Padding", "type": "text" },
+      { "group": "styles", "key": "borderRadius", "label": "Radius", "type": "text" },
+      { "group": "styles", "key": "fontSize", "label": "Font size", "type": "text" }
+    ]
+  },
+  {
+    "id": "divider",
+    "type": "divider",
+    "label": "Divider",
+    "icon": "Hr",
+    "category": "layout",
+    "preview": "Divider line",
+    "defaultProps": {
+      "label": ""
+    },
+    "defaultStyles": {
+      "borderColor": "#e5e7eb",
+      "marginTop": "28px",
+      "marginBottom": "28px"
+    },
+    "propertyControls": [
+      { "group": "props", "key": "label", "label": "Optional label", "type": "text" }
+    ],
+    "styleControls": [
+      { "group": "styles", "key": "borderColor", "label": "Line color", "type": "color" },
+      { "group": "styles", "key": "marginTop", "label": "Margin top", "type": "text" },
+      { "group": "styles", "key": "marginBottom", "label": "Margin bottom", "type": "text" }
+    ]
+  }
+]
