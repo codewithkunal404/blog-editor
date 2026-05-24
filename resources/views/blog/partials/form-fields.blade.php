@@ -367,15 +367,27 @@ document.addEventListener('DOMContentLoaded', () => {
             item.innerHTML = `<div class="mb-3 flex items-center justify-between gap-3">
                 <div class="text-xs font-semibold uppercase text-slate-500">${index + 1}. ${escapeHtml(title)}</div>
                 <div class="flex gap-2">
-                    <button type="button" data-action="up" data-index="${index}" class="rounded-md border border-slate-200 px-2 py-1 text-xs">Up</button>
-                    <button type="button" data-action="down" data-index="${index}" class="rounded-md border border-slate-200 px-2 py-1 text-xs">Down</button>
-                    <button type="button" data-action="settings" data-index="${index}" class="inline-flex h-7 w-7 items-center justify-center rounded-md border border-slate-200 text-slate-600 hover:bg-slate-50" aria-label="Open block settings" title="Settings">
+                    <button type="button" data-action="up" data-index="${index}" class="inline-flex h-7 w-7 items-center justify-center rounded-md border border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition" aria-label="Move up" title="Move up">
+                        <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m-7 7l7-7 7 7" />
+                        </svg>
+                    </button>
+                    <button type="button" data-action="down" data-index="${index}" class="inline-flex h-7 w-7 items-center justify-center rounded-md border border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition" aria-label="Move down" title="Move down">
+                        <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-7-7l7 7 7-7" />
+                        </svg>
+                    </button>
+                    <button type="button" data-action="settings" data-index="${index}" class="inline-flex h-7 w-7 items-center justify-center rounded-md border border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition" aria-label="Open block settings" title="Settings">
                         <svg aria-hidden="true" viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.3 4.3c.4-1.7 2.9-1.7 3.4 0 .2.9 1.3 1.3 2.1.8 1.5-.9 3.2.8 2.3 2.3-.5.8-.1 1.9.8 2.1 1.7.4 1.7 2.9 0 3.4-.9.2-1.3 1.3-.8 2.1.9 1.5-.8 3.2-2.3 2.3-.8-.5-1.9-.1-2.1.8-.4 1.7-2.9 1.7-3.4 0-.2-.9-1.3-1.3-2.1-.8-1.5.9-3.2-.8-2.3-2.3.5-.8.1-1.9-.8-2.1-1.7-.4-1.7-2.9 0-3.4.9-.2 1.3-1.3.8-2.1-.9-1.5.8-3.2 2.3-2.3.8.5 1.9.1 2.1-.8Z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                         </svg>
                     </button>
-                    <button type="button" data-action="delete" data-index="${index}" class="rounded-md border border-rose-200 px-2 py-1 text-xs text-rose-700">Delete</button>
+                    <button type="button" data-action="delete" data-index="${index}" class="inline-flex h-7 w-7 items-center justify-center rounded-md border border-rose-200 text-rose-600 hover:bg-rose-50 hover:text-rose-700 transition" aria-label="Delete block" title="Delete">
+                        <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                    </button>
                 </div>
             </div>${blockPreview(block)}`;
             item.addEventListener('click', (event) => {
